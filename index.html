@@ -12,17 +12,18 @@
   }
 
   /* Hero section */
-  .hero {
-    width: 100%;
-    background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px 0 20px; /* topo e espaço para ondas abaixo */
-    position: relative;
+      .hero {
+  width: 100%;
+  min-height: 100vh; /* garante que o hero ocupe pelo menos a tela inteira */
+  background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 0 20px; /* ajuste se necessário */
+  position: relative;
   }
 
   .hero img.logo {
@@ -38,9 +39,10 @@
 
   /* Ondas */
   .waves {
-    width: 100%;
-    height: 200px; /* altura visível das ondas */
-    overflow: hidden;
+  width: 100%;
+  height: 250px; /* aumenta a altura das ondas para serem totalmente visíveis */
+  overflow: hidden;
+  margin-top: auto; /* garante que as ondas fiquem na parte inferior do hero */
   }
 
   .waves svg {
